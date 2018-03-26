@@ -1,22 +1,17 @@
 package com.grability.unittestexample.redux.actions.login;
 
-import com.grability.unittestexample.redux.actions.Action;
+import com.yheriatovych.reductor.Action;
+import com.yheriatovych.reductor.annotations.ActionCreator;
 
 /**
  * Created by devmaster on 23/03/18.
  */
+@ActionCreator
+public interface LoginActions {
 
-public class LoginActions {
+    public static final String SHOW_VALIDATION_MESSAGES = "SHOW_VALIDATION_MESSAGES";
 
-    public static final String SHOW_ERRORS = "SHOW_ERRORS";
-    public static final String HIDE_ERRORS = "HIDE_ERRORS";
-
-    public static Action showErrors(){
-        return new Action(SHOW_ERRORS);
-    }
-
-    public static Action hideError(){
-        return new Action(HIDE_ERRORS);
-    }
+    @ActionCreator.Action(SHOW_VALIDATION_MESSAGES)
+    Action showValidationMessages();
 
 }

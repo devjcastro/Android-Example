@@ -6,19 +6,27 @@ import com.grability.unittestexample.domain.dto.UserCredential;
 import com.grability.unittestexample.redux.actions.login.LoginActions;
 import com.yheriatovych.reductor.Action;
 import com.yheriatovych.reductor.Reducer;
+import com.yheriatovych.reductor.annotations.AutoReducer;
 
 /**
  * Created by devmaster on 23/03/18.
  */
+@AutoReducer
+public abstract class LoginReducer implements Reducer<Boolean> {
 
-public class LoginReducer implements Reducer<UserCredential> {
+    @AutoReducer.InitialState
+    boolean initialState() {
+        return false;
+    }
 
-    @Override
-    public UserCredential reduce(UserCredential userCredential, Action action) {
-        switch (action.type){
-            case LoginActions.SHOW_ERRORS:
-                return null;
-        }
-        return null;
+    @AutoReducer.Action(
+            value = LoginActions.SHOW_VALIDATION_MESSAGES,
+            from = LoginActions.class)
+    boolean showValidationMessages(boolean state) {
+        return !state;
+    }
+
+    public static LoginReducer create() {
+        return new LoginReducerImpl(); //Note: usage of generated class
     }
 }
