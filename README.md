@@ -1,1 +1,1 @@
-# ReduxExampleAndroid
+# Example Android
