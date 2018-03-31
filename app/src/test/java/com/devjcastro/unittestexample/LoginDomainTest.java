@@ -1,7 +1,7 @@
-package com.grability.unittestexample;
+package com.devjcastro.unittestexample;
 
-import com.grability.unittestexample.domain.dto.UserCredential;
-import com.grability.unittestexample.domain.login.MockLoginDomain;
+import com.devjcastro.unittestexample.domain.dto.UserCredential;
+import com.devjcastro.unittestexample.domain.login.MockLoginDomain;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -16,7 +16,7 @@ public class LoginDomainTest {
     MockLoginDomain domain;
 
     @Before
-    public void setu(){
+    public void setup() throws Exception {
         domain = new MockLoginDomain();
     }
 

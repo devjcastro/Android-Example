@@ -1,6 +1,6 @@
-package com.grability.unittestexample.domain.login;
+package com.devjcastro.unittestexample.domain.login;
 
-import com.grability.unittestexample.domain.dto.UserCredential;
+import com.devjcastro.unittestexample.domain.dto.UserCredential;
 
 /**
  * Created by Jorge Castrp on 26/03/2018.

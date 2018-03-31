@@ -1,7 +1,7 @@
-package com.grability.unittestexample.domain.di.login;
+package com.devjcastro.unittestexample.domain.di.login;
 
-import com.grability.unittestexample.domain.login.ILoginDomain;
-import com.grability.unittestexample.domain.login.MockLoginDomain;
+import com.devjcastro.unittestexample.domain.login.ILoginDomain;
+import com.devjcastro.unittestexample.domain.login.MockLoginDomain;
 
 /**
  * Created by Jorge Castrp on 30/03/2018.

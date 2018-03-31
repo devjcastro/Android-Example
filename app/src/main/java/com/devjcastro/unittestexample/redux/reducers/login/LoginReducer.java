@@ -1,10 +1,6 @@
-package com.grability.unittestexample.redux.reducers.login;
+package com.devjcastro.unittestexample.redux.reducers.login;
 
-import android.net.wifi.hotspot2.pps.Credential;
-
-import com.grability.unittestexample.domain.dto.UserCredential;
-import com.grability.unittestexample.redux.actions.login.LoginActions;
-import com.yheriatovych.reductor.Action;
+import com.devjcastro.unittestexample.redux.actions.login.LoginActions;
 import com.yheriatovych.reductor.Reducer;
 import com.yheriatovych.reductor.annotations.AutoReducer;
 

@@ -1,4 +1,4 @@
-package com.grability.unittestexample.domain.dto;
+package com.devjcastro.unittestexample.domain.dto;
 
 /**
  * Created by devmaster on 23/03/18.

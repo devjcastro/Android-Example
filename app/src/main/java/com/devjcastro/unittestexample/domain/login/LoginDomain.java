@@ -1,12 +1,13 @@
-package com.grability.unittestexample.domain.login;
+package com.devjcastro.unittestexample.domain.login;
 
-import com.grability.unittestexample.domain.dto.UserCredential;
+import com.devjcastro.unittestexample.domain.dto.UserCredential;
 
 /**
- * Created by Jorge Castrp on 30/03/2018.
+ * Created by devmaster on 26/03/18.
  */
 
-public class MockLoginDomain implements ILoginDomain {
+public class LoginDomain implements ILoginDomain {
+
     @Override
     public boolean login(UserCredential credentials) {
         if(credentials.getUsername().equalsIgnoreCase("jorge.castro") && credentials.getPassword().equals("123456")){

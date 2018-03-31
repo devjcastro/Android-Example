@@ -1,4 +1,4 @@
-package com.grability.unittestexample.redux.actions.login;
+package com.devjcastro.unittestexample.redux.actions.login;
 
 import com.yheriatovych.reductor.Action;
 import com.yheriatovych.reductor.annotations.ActionCreator;

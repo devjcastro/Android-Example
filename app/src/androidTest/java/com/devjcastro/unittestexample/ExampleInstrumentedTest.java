@@ -1,4 +1,4 @@
-package com.grability.unittestexample;
+package com.devjcastro.unittestexample;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

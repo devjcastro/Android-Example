@@ -1,6 +1,6 @@
-package com.grability.unittestexample.domain.di.login;
+package com.devjcastro.unittestexample.domain.di.login;
 
-import com.grability.unittestexample.ui.activities.login.LoginActivity;
+import com.devjcastro.unittestexample.ui.activities.login.LoginActivity;
 
 import dagger.Component;
 

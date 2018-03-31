@@ -1,4 +1,4 @@
-package com.grability.unittestexample.ui.activities.login;
+package com.devjcastro.unittestexample.ui.activities.login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,12 +7,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.grability.unittestexample.R;
-import com.grability.unittestexample.domain.di.login.DaggerLoginDomainComponent;
-import com.grability.unittestexample.domain.dto.UserCredential;
-import com.grability.unittestexample.domain.login.ILoginDomain;
-import com.grability.unittestexample.redux.actions.login.LoginActions;
-import com.grability.unittestexample.redux.reducers.login.LoginReducer;
+import com.devjcastro.unittestexample.R;
+import com.devjcastro.unittestexample.domain.di.login.DaggerLoginDomainComponent;
+import com.devjcastro.unittestexample.domain.dto.UserCredential;
+import com.devjcastro.unittestexample.domain.login.ILoginDomain;
+import com.devjcastro.unittestexample.redux.actions.login.LoginActions;
+import com.devjcastro.unittestexample.redux.reducers.login.LoginReducer;
 import com.yheriatovych.reductor.Actions;
 import com.yheriatovych.reductor.Store;
 
