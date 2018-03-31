@@ -8,9 +8,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.grability.unittestexample.R;
-import com.grability.unittestexample.domain.di.login.DaggerAppDomainComponent;
+import com.grability.unittestexample.domain.di.login.DaggerLoginDomainComponent;
 import com.grability.unittestexample.domain.dto.UserCredential;
-import com.grability.unittestexample.domain.login.LoginDomain;
+import com.grability.unittestexample.domain.login.ILoginDomain;
 import com.grability.unittestexample.redux.actions.login.LoginActions;
 import com.grability.unittestexample.redux.reducers.login.LoginReducer;
 import com.yheriatovych.reductor.Actions;
@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     @Inject
-    LoginDomain loginDomain;
+    ILoginDomain loginDomain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void configDagger(){
-        DaggerAppDomainComponent.create().inject(this);
+        DaggerLoginDomainComponent.create().inject(this);
     }
 
     private void configReductor(){

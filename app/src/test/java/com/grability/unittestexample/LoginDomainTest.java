@@ -1,8 +1,9 @@
 package com.grability.unittestexample;
 
 import com.grability.unittestexample.domain.dto.UserCredential;
-import com.grability.unittestexample.domain.login.LoginDomain;
+import com.grability.unittestexample.domain.login.MockLoginDomain;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -12,15 +13,20 @@ import static org.junit.Assert.*;
  */
 public class LoginDomainTest {
 
+    MockLoginDomain domain;
+
+    @Before
+    public void setu(){
+        domain = new MockLoginDomain();
+    }
+
     @Test
     public void loginSuccessful() throws Exception {
 
         //Given
-        LoginDomain domain = new LoginDomain();
-
+        UserCredential userCredential = new UserCredential("jorge.castro", "123456");
 
         //When
-        UserCredential userCredential = new UserCredential("jorge.castro", "123456");
         boolean status = domain.login(userCredential);
 
         //Then
@@ -32,11 +38,10 @@ public class LoginDomainTest {
     public void loginFail() throws Exception {
 
         //Given
-        LoginDomain domain = new LoginDomain();
+        UserCredential userCredential = new UserCredential("jorge.castro", "12345");
 
 
         //When
-        UserCredential userCredential = new UserCredential("jorge.castro", "12345");
         boolean status = domain.login(userCredential);
 
         //Then

@@ -1,5 +1,6 @@
 package com.grability.unittestexample.domain.di.login;
 
+import com.grability.unittestexample.domain.login.ILoginDomain;
 import com.grability.unittestexample.domain.login.LoginDomain;
 
 
@@ -10,10 +11,10 @@ import dagger.Provides;
  * Created by devmaster on 26/03/18.
  */
 @Module
-class AppDomainModule {
+class LoginDomainModule {
 
     @Provides
-    LoginDomain provideLoginDomain(){
+    ILoginDomain provideLoginDomain(){
         return new LoginDomain();
     }
 }

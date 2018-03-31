@@ -7,7 +7,7 @@ import dagger.Component;
 /**
  * Created by devmaster on 26/03/18.
  */
-@Component(modules = AppDomainModule.class)
-public interface AppDomainComponent {
+@Component(modules = LoginDomainModule.class)
+public interface LoginDomainComponent {
     void inject(LoginActivity activity);
 }
